@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Splash Screen Demo</title>
+  <title>Susie Hunter Consulting</title>
   <style>
     body {
       margin: 0;
@@ -12,14 +12,44 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      font-family: Arial, sans-serif;
+      color: #403252;
+    }
+    .container {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 8px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
     }
     img {
-      max-width: 80%;
+      max-width: 100%;
       height: auto;
+      margin-bottom: 30px;
+    }
+    .contact-info {
+      font-size: 14px;
+      color: #5a4a70;
+      line-height: 1.5;
+    }
+    .contact-info a {
+      color: #2a4d9e;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <img src="logo03.png" alt="Susie Hunter Consulting Logo" />
+  <div class="container">
+    <img src="logo03.png" alt="Susie Hunter Consulting Logo" />
+    <div class="contact-info">
+      <p>Email - <a href="mailto:susie@susiehunterconsulting.com">susie@susiehunterconsulting.com</a></p>
+      <p>Telephone - 07917 466600</p>
+      <p>Linkedin - <a href="https://www.linkedin.com/in/susie-hunter-consulting" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/susie-hunter-consulting</a></p>
+    </div>
+  </div>
 </body>
 </html>

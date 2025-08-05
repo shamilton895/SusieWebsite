@@ -28,13 +28,13 @@
 
     img {
       width: 100%;
-      max-width: 500px;
+      max-width: 300px;
       height: auto;
-      margin-bottom: 40px;
+      margin-bottom: 10px;
     }
 
     .contact-info {
-      font-size: 18px;
+      font-size: 18px; /* Default size for desktops and tablets */
       color: #5a4a70;
       line-height: 1.8;
     }
@@ -47,6 +47,13 @@
     .contact-info a:hover {
       text-decoration: underline;
     }
+
+    /* Responsive font size for smaller devices */
+    @media (max-width: 480px) {
+      .contact-info {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -55,8 +62,4 @@
     <div class="contact-info">
       <p>Email - <a href="mailto:susie@susiehunterconsulting.com">susie@susiehunterconsulting.com</a></p>
       <p>Telephone - 07917 466600</p>
-      <p>LinkedIn - <a href="https://www.linkedin.com/in/susie-hunter-consulting" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/susie-hunter-consulting</a></p>
-    </div>
-  </div>
-</body>
-</html>
+      <p>LinkedIn - <a href="https://www.linkedin.com/in/susie-hunter-consulting" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/susie-hunter-consulting</a>_
